@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e512813-a89e-4dd7-9abd-a553df6aab31" name="Default" comment="初始化taotao商城项目">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/taotao-parent/target/" />
@@ -642,12 +642,12 @@
       <option name="presentableId" value="Default" />
       <updated>1508257458395</updated>
       <workItem from="1508257461698" duration="941000" />
-      <workItem from="1508258642595" duration="11044000" />
+      <workItem from="1508258642595" duration="11139000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11985000" />
+    <option name="totallyTimeSpent" value="12080000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
