@@ -2,8 +2,9 @@ package com.taotao.mapper;
 
 import com.taotao.pojo.TbItemCat;
 import com.taotao.pojo.TbItemCatExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface TbItemCatMapper {
     int countByExample(TbItemCatExample example);

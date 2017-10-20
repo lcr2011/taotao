@@ -1,0 +1,19 @@
+package com.taotao.portal.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * Created by Eshaon on 2017-10-20.
+ *
+ * 首页展示Controller
+ *
+ */
+@Controller
+public class IndexController {
+
+    @RequestMapping("/index")
+    public String showIndex() {
+        return "index";
+    }
+}

@@ -5,7 +5,6 @@
     <artifactId>taotao-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-
     <properties>
         <junit.version>4.12</junit.version>
         <spring.version>4.2.4.RELEASE</spring.version>
@@ -36,7 +35,6 @@
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
     </properties>
-
     <dependencyManagement>
         <dependencies>
             <!-- 时间操作组件 -->
