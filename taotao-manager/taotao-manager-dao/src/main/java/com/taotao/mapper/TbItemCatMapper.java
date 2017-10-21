@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 public interface TbItemCatMapper {
+
     int countByExample(TbItemCatExample example);
 
     int deleteByExample(TbItemCatExample example);

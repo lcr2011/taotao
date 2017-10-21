@@ -10758,3 +10758,2250 @@ Root WebApplicationContext: initialization completed in 17893 ms
 
 [INFO ] 2017-10-20 23:25:17,685 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
  [DUBBO] disconected from /192.168.120.1:56510,url:dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=55940&side=provider&timeout=300000&timestamp=1508511884079, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:35,933 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-20 23:32:36,043 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Fri Oct 20 23:32:36 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-20 23:32:36,105 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-20 23:32:36,293 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-20 23:32:36,499 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-20 23:32:36,546 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-20 23:32:36,859 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-20 23:32:36,875 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-20 23:32:39,283 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,548 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,548 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,548 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377 to registry registry://192.168.200.129:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=58516&registry=zookeeper&timestamp=1508513559299, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,877 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,892 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-192.168.200.129.cache, data: {com.taotao.content.service.ContentCategoryService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=61940&side=provider&timeout=300000&timestamp=1508512165714 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513050028 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513050028, com.taotao.content.service.ContentService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=61940&side=provider&timeout=300000&timestamp=1508512171624 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513053440 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513053440, com.taotao.service.ItemService=dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=55940&side=provider&timeout=300000&timestamp=1508511884079 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513053599 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=47504&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508513053599}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:39,908 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=Eshaon-PC
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-20 23:32:39,924 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=192.168.200.129:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@123f301a
+
+
+[INFO ] 2017-10-20 23:32:39,955 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-20 23:32:39,955 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.200.129/192.168.200.129:2181, initiating session
+
+
+[INFO ] 2017-10-20 23:32:39,986 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.200.129/192.168.200.129:2181, sessionid = 0x15f32750bb3003a, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-20 23:32:39,986 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-20 23:32:39,986 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:40,064 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:40,095 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=58516&side=provider&timeout=300000&timestamp=1508513559377], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-20 23:32:40,126 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 4193 ms
+
+
+[INFO ] 2017-10-20 23:35:23,755 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+
+
+[WARN ] 2017-10-20 23:57:04,676 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x15f32750bb3003a
+
+
+[INFO ] 2017-10-20 23:57:04,676 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x15f32750bb3003a, closing socket connection and attempting reconnect
+
+
+[INFO ] 2017-10-20 23:57:05,703 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2017-10-20 23:57:08,432 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-20 23:57:10,776 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 192.168.200.129/192.168.200.129:2181, initiating session
+
+
+[INFO ] 2017-10-20 23:57:11,247 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 192.168.200.129/192.168.200.129:2181, sessionid = 0x15f32750bb3003a, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-20 23:57:11,247 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[WARN ] 2017-10-21 00:23:01,965 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20013ms for sessionid 0x15f32750bb3003a
+
+
+[INFO ] 2017-10-21 00:23:02,217 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20013ms for sessionid 0x15f32750bb3003a, closing socket connection and attempting reconnect
+
+
+[INFO ] 2017-10-21 00:23:03,176 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2017-10-21 00:23:03,440 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:23:32,601 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:23:43,932 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:24:04,934 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:24:06,095 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:24:27,131 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:24:28,382 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:24:49,391 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:24:51,208 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:25:12,207 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:25:14,123 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:25:35,128 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:25:36,370 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:25:57,366 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:25:59,340 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:26:20,340 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:26:21,857 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:26:42,859 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:26:44,417 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:27:05,423 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:27:06,834 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:27:27,888 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:27:29,287 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:27:50,294 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:27:51,777 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:28:12,780 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:28:14,453 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:28:35,458 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:28:37,108 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:28:58,111 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:28:59,682 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:29:20,684 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:29:22,371 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:29:43,376 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:29:45,447 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:30:06,448 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:30:07,765 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:30:28,762 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:30:29,925 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:30:50,923 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:30:52,466 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:31:13,464 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:31:14,878 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:31:35,882 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:31:37,359 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:31:58,363 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:31:59,794 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:32:20,799 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:32:22,281 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:32:43,284 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:32:44,677 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:33:05,749 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:33:07,225 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:33:28,226 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:33:29,898 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:33:50,985 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:33:53,107 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:34:14,116 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x15f32750bb3003a for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection timed out: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:34:16,242 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 192.168.200.129/192.168.200.129:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 00:41:46,153 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 00:41:46,333 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 00:41:46 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 00:41:46,443 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 00:41:47,259 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 00:41:47,448 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 00:41:47,494 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 00:41:47,934 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 00:41:47,966 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 00:41:51,053 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:41:51,458 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:41:51,458 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:41:51,458 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=64420&registry=zookeeper&timestamp=1508517711073, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:41:51,946 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:41:52,183 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=192.168.120.1
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 00:41:53,380 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3e086648
+
+
+[INFO ] 2017-10-21 00:42:02,623 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:03,654 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:04,765 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:05,762 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:06,865 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:07,894 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:09,021 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:10,055 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:11,175 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:12,203 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:13,306 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:14,326 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:15,427 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:16,448 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:17,559 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:18,584 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:19,696 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:20,727 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:21,827 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:22,866 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:23,990 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:25,032 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:26,140 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:27,174 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:28,282 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:29,314 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:30,432 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:31,463 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:32,580 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:33,600 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:34,701 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:35,722 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:36,843 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:37,865 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:38,974 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:40,000 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:41,119 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:42,141 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:43,249 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:44,275 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:45,392 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:46,422 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:47,528 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:48,567 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:49,688 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:50,712 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:51,821 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:52,844 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:53,955 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:54,965 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:56,071 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:57,122 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:42:58,229 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:42:59,249 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:43:00,367 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:43:01,415 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:43:02,529 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:43:03,566 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:43:04,675 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2017-10-21 00:43:05,700 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:744)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2017-10-21 00:43:06,808 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 00:43:07,320 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 00:43:07,351 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad0380000, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 00:43:07,351 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 00:43:07,351 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:07,415 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:07,484 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:07,599 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 81442 ms
+
+
+[INFO ] 2017-10-21 00:43:42,710 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 00:43:42,841 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 00:43:42 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 00:43:42,910 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 00:43:43,128 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 00:43:43,330 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 00:43:43,384 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 00:43:43,736 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 00:43:43,753 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 00:43:46,145 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,312 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,312 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,312 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=49744&registry=zookeeper&timestamp=1508517826161, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,614 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,646 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.service.ItemService=empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64420&side=provider&timeout=300000&timestamp=1508517711297}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:46,678 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 00:43:46,749 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 00:43:46,750 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=192.168.120.1
+
+
+[INFO ] 2017-10-21 00:43:46,751 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 00:43:46,751 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 00:43:46,752 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 00:43:46,752 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 00:43:46,752 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 00:43:46,752 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 00:43:46,753 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 00:43:46,753 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 00:43:46,753 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 00:43:46,753 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 00:43:46,754 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 00:43:46,754 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 00:43:46,754 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 00:43:46,755 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@75b0a4c4
+
+
+[INFO ] 2017-10-21 00:43:55,897 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 00:43:55,897 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 00:43:55,912 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad0380001, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 00:43:55,912 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 00:43:55,912 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:55,983 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:56,012 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 00:43:56,076 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 13366 ms
+
+
+[INFO ] 2017-10-21 01:02:38,555 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 01:02:38,735 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 01:02:38 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 01:02:38,825 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 01:02:39,039 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 01:02:39,273 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 01:02:39,336 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 01:02:39,774 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 01:02:39,805 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 01:02:44,059 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:44,627 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:44,627 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:44,627 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=60380&registry=zookeeper&timestamp=1508518964074, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:45,102 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:45,164 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.content.service.ContentCategoryService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=56336&side=provider&timeout=300000&timestamp=1508517861710 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518542451 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518542451, com.taotao.service.ItemCatService=empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=providers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518553245 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518553245 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518553245, com.taotao.content.service.ContentService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=56336&side=provider&timeout=300000&timestamp=1508517875902 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518553056 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=66864&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508518553056, com.taotao.service.ItemService=empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=49744&side=provider&timeout=300000&timestamp=1508517826176}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:45,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 01:02:45,218 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=Eshaon-PC
+
+
+[INFO ] 2017-10-21 01:02:45,218 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 01:02:45,220 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 01:02:45,220 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 01:02:45,221 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 01:02:45,221 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 01:02:45,221 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 01:02:45,222 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 01:02:45,222 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 01:02:45,222 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 01:02:45,223 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 01:02:45,223 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 01:02:45,223 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 01:02:45,224 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 01:02:45,226 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5abfe0e9
+
+
+[INFO ] 2017-10-21 01:02:45,252 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 01:02:54,317 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 01:02:55,390 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 01:02:55,417 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad0380006, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 01:02:56,555 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 01:02:56,630 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:02:58,412 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:03,015 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,012 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,043 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,043 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,043 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=60380&registry=zookeeper&timestamp=1508518985028, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,043 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,154 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,187 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 01:03:05,203 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 26648 ms
+
+
+[INFO ] 2017-10-21 01:06:17,549 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
+{dataSource-1} inited
+
+
+[INFO ] 2017-10-21 14:17:26,931 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 14:17:27,340 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 14:17:27 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 14:17:27,620 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 14:17:31,039 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 14:17:31,489 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 14:17:31,542 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 14:17:32,573 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 14:17:32,592 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 14:17:40,805 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:42,181 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:42,185 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:42,186 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=50240&registry=zookeeper&timestamp=1508566660841, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:42,835 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:43,187 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.content.service.ContentCategoryService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=68484&side=provider&timeout=300000&timestamp=1508518985412 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519023102 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519023102, com.taotao.service.ItemCatService=dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=60380&side=provider&timeout=300000&timestamp=1508518985028 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033521 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033521, com.taotao.service.ItemService=dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=60380&side=provider&timeout=300000&timestamp=1508518964151 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033697 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033697, com.taotao.content.service.ContentService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=68484&side=provider&timeout=300000&timestamp=1508518995140 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033303 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=40892&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508519033303}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:43,228 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 14:17:44,441 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 14:17:44,442 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=192.168.120.1
+
+
+[INFO ] 2017-10-21 14:17:44,443 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 14:17:44,444 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 14:17:44,444 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 14:17:44,444 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 14:17:44,444 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 14:17:44,445 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 14:17:44,445 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 14:17:44,445 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 14:17:44,445 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 14:17:44,446 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 14:17:44,446 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 14:17:44,446 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 14:17:44,446 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 14:17:44,448 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@7d0dd40d
+
+
+[INFO ] 2017-10-21 14:17:54,338 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 14:17:54,347 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 14:17:54,362 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad0380009, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 14:17:54,366 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 14:17:54,370 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,461 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,546 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,606 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,630 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,630 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,631 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=50240&registry=zookeeper&timestamp=1508566674614, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,633 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,742 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,807 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:17:54,858 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 27885 ms
+
+
+[INFO ] 2017-10-21 14:38:47,888 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 14:38:49,332 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 14:38:49 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 14:38:50,218 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 14:38:51,388 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 14:38:52,172 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 14:38:52,270 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 14:38:53,653 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 14:38:53,705 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 14:38:59,576 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:38:59,873 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:38:59,873 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:38:59,874 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=67036&registry=zookeeper&timestamp=1508567939606, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:00,534 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:00,746 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=52980&side=provider&timeout=300000&timestamp=1508566693800, com.taotao.service.ItemCatService=empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=50240&side=provider&timeout=300000&timestamp=1508566674615, com.taotao.service.ItemService=empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=50240&side=provider&timeout=300000&timestamp=1508566661954, com.taotao.content.service.ContentService=empty://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=addContent&pid=52980&side=provider&timeout=300000&timestamp=1508566704069}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:00,810 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 14:39:00,832 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 14:39:00,833 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=Eshaon-PC
+
+
+[INFO ] 2017-10-21 14:39:00,835 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 14:39:00,836 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 14:39:00,836 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 14:39:00,837 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 14:39:00,837 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 14:39:00,838 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 14:39:00,838 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 14:39:00,839 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 14:39:00,840 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 14:39:00,840 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 14:39:00,841 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 14:39:00,841 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 14:39:00,842 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 14:39:00,845 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5b2f3019
+
+
+[INFO ] 2017-10-21 14:39:10,005 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 14:39:10,013 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 14:39:10,059 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad038000b, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 14:39:10,068 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 14:39:10,081 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,203 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,269 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,356 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,399 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,407 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,407 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=67036&registry=zookeeper&timestamp=1508567950365, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,412 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,455 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,755 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 14:39:10,788 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 22893 ms
+
+
+[WARN ] 2017-10-21 15:03:31,139 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x15f3aaad038000b
+
+
+[INFO ] 2017-10-21 15:03:34,847 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x15f3aaad038000b, closing socket connection and attempting reconnect
+
+
+[INFO ] 2017-10-21 15:03:35,339 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2017-10-21 15:03:36,489 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 15:03:37,782 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 15:03:38,271 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad038000b, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 15:03:38,272 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[WARN ] 2017-10-21 15:31:49,473 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.120.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:31:52,277 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.120.1:3813,url:dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:43:18,935 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 15:43:23,885 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 15:43:23 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 15:43:30,627 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 15:43:43,685 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 15:43:48,032 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 15:43:48,347 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 15:43:56,798 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 15:43:57,449 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 15:44:40,174 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:41,454 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:41,455 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:41,455 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=68648&registry=zookeeper&timestamp=1508571880225, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:44,892 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:45,112 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.content.service.ContentCategoryService=empty://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=32208&side=provider&timeout=300000&timestamp=1508571741108, com.taotao.service.ItemCatService=dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=67036&side=provider&timeout=300000&timestamp=1508567950366 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=64236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508568517182 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=64236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508568517182, com.taotao.service.ItemService=dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=67036&side=provider&timeout=300000&timestamp=1508567939645 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508568517425 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=64236&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508568517425, com.taotao.content.service.ContentService=empty://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=32208&side=provider&timeout=300000&timestamp=1508571759199}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:45,245 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 15:44:45,512 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 15:44:45,514 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=Eshaon-PC
+
+
+[INFO ] 2017-10-21 15:44:45,515 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 15:44:45,515 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 15:44:45,516 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 15:44:45,516 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 15:44:45,517 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Public\PTGo\Program\;C:\Users\Public\Fog\Program\;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 15:44:45,517 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 15:44:45,518 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 15:44:45,518 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 15:44:45,518 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 15:44:45,519 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 15:44:45,519 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 15:44:45,520 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 15:44:45,520 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 15:44:45,523 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5c10ea88
+
+
+[INFO ] 2017-10-21 15:44:54,789 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 15:44:54,814 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 15:44:54,857 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad038000f, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 15:44:54,880 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 15:44:54,897 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,061 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,127 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,311 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,366 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,367 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,380 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=68648&registry=zookeeper&timestamp=1508571895317, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,384 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,512 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,552 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 15:44:55,638 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 96610 ms
+
+
+[WARN ] 2017-10-21 16:09:21,430 method:com.alibaba.dubbo.remoting.transport.AbstractServer.disconnected(AbstractServer.java:197)
+ [DUBBO] All clients has discontected from /192.168.120.1:20880. You can graceful shutdown now., dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 16:09:31,564 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.120.1:6271,url:dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:49,728 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:307)
+Root WebApplicationContext: initialization started
+
+
+[INFO ] 2017-10-21 17:42:49,946 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing Root WebApplicationContext: startup date [Sat Oct 21 17:42:49 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 17:42:50,087 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-dao.xml]
+
+
+[INFO ] 2017-10-21 17:42:50,788 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-service.xml]
+
+
+[INFO ] 2017-10-21 17:42:51,139 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2017-10-21 17:42:51,233 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from file [E:\JAVA\Project\taotao\taotao-manager\taotao-manager-service\target\classes\spring\applicationContext-trans.xml]
+
+
+[INFO ] 2017-10-21 17:42:51,689 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [properties/db.properties]
+
+
+[INFO ] 2017-10-21 17:42:51,705 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2017-10-21 17:42:56,044 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,343 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,343 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,343 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemService url dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=2616&registry=zookeeper&timestamp=1508578976060, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,691 method:com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:69)
+ [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /192.168.120.1:20880, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,958 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\Administrator\.dubbo\dubbo-registry-www.eshaon.xin.cache, data: {com.taotao.content.service.ContentCategoryService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentCategoryService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=32208&side=provider&timeout=300000&timestamp=1508571741108 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573550530 empty://192.168.120.1/com.taotao.content.service.ContentCategoryService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentCategoryService&methods=addContentCategory,getContentCategoryList&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573550530, com.taotao.service.ItemCatService=dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=68648&side=provider&timeout=300000&timestamp=1508571895318 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573561930 empty://192.168.120.1/com.taotao.service.ItemCatService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573561930, com.taotao.service.ItemService=dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=68648&side=provider&timeout=300000&timestamp=1508571880652 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=configurators&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573562136 empty://192.168.120.1/com.taotao.service.ItemService?application=taotao-manager-web&category=routers&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=52396&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573562136, com.taotao.content.service.ContentService=dubbo://192.168.120.1:20881/com.taotao.content.service.ContentService?anyhost=true&application=taotao-content&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=32208&side=provider&timeout=300000&timestamp=1508571759199 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=configurators&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=49980&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573827154 empty://192.168.120.1/com.taotao.content.service.ContentService?application=taotao-portal-web&category=routers&dubbo=2.5.3&interface=com.taotao.content.service.ContentService&methods=getContentByCid,addContent&pid=49980&revision=0.0.1-SNAPSHOT&side=consumer&timestamp=1508573827154}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:42:56,974 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=Eshaon-PC
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.7.0_80
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=D:\Java\jdk1.7.0_80\jre
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=E:\JAVA\Project\taotao-origin\maven\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2016.3.1\lib\idea_rt.jar
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=D:\Java\jdk1.7.0_80\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.8.0_112\bin;D:\MySQL\MySQL Server 5.5\bin;.;D:\maven\apache-maven-3.5.0\bin;D:\Git\cmd;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\ImageMagick-7.0.4-Q16;C:\Program Files\ImageMagick-7.0.4-Q16;C:\Program Files\nodejs\;D:\OpenCV\opencv-2.4.9\build\x86\vc12\bin;D:\TortoiseGit\bin;C:\Users\Administrator\AppData\Roaming\npm;.
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 7
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=6.1
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=Eshaon
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\Administrator
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=E:\JAVA\Project\taotao\taotao-manager
+
+
+[INFO ] 2017-10-21 17:42:57,005 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=www.eshaon.xin:2181 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@18c3d715
+
+
+[INFO ] 2017-10-21 17:43:06,225 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 101.132.66.157/101.132.66.157:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2017-10-21 17:43:06,260 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 101.132.66.157/101.132.66.157:2181, initiating session
+
+
+[INFO ] 2017-10-21 17:43:06,404 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 101.132.66.157/101.132.66.157:2181, sessionid = 0x15f3aaad0380016, negotiated timeout = 30000
+
+
+[INFO ] 2017-10-21 17:43:06,412 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2017-10-21 17:43:06,417 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:06,966 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,153 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemService&methods=getItemList,addItem,getItemById&pid=2616&side=provider&timeout=300000&timestamp=1508578976203], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,238 method:com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:107)
+ [DUBBO] The service ready on spring started. service: com.taotao.service.ItemCatService, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,261 method:com.alibaba.dubbo.config.ServiceConfig.exportLocal(ServiceConfig.java:510)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,261 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:470)
+ [DUBBO] Export dubbo service com.taotao.service.ItemCatService to url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,261 method:com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:481)
+ [DUBBO] Register dubbo service com.taotao.service.ItemCatService url dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244 to registry registry://www.eshaon.xin:2181/com.alibaba.dubbo.registry.RegistryService?application=taotao-manager&dubbo=2.5.3&pid=2616&registry=zookeeper&timestamp=1508578987243, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,263 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: dubbo://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,305 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,503 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url provider://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244, urls: [empty://192.168.120.1:20880/com.taotao.service.ItemCatService?anyhost=true&application=taotao-manager&category=configurators&check=false&dubbo=2.5.3&interface=com.taotao.service.ItemCatService&methods=getItemCatList&pid=2616&side=provider&timeout=300000&timestamp=1508578987244], dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2017-10-21 17:43:07,519 method:org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:347)
+Root WebApplicationContext: initialization completed in 17758 ms

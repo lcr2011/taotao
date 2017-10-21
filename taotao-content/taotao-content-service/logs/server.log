@@ -1,0 +1,56 @@
+
+
+[INFO ] 2017-10-21 20:48:02,103 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22c88c75: startup date [Sat Oct 21 20:48:02 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 20:48:03,227 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 20:49:01,571 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@22c88c75: startup date [Sat Oct 21 20:49:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 20:49:01,683 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 21:11:57,726 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@729e6e1a: startup date [Sat Oct 21 21:11:57 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 21:11:58,085 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 21:16:01,929 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3ba1b175: startup date [Sat Oct 21 21:16:01 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 21:16:02,023 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 21:18:31,358 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@17aee8b0: startup date [Sat Oct 21 21:18:31 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 21:18:31,431 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 21:20:28,218 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@72871d3e: startup date [Sat Oct 21 21:20:28 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 21:20:28,282 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-21 21:20:47,677 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@72871d3e: startup date [Sat Oct 21 21:20:47 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-21 21:20:47,768 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
