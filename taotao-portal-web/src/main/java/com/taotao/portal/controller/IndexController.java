@@ -21,7 +21,6 @@ import java.util.List;
 @Controller
 public class IndexController {
 
-
     @Value("${AD1_CATEGORY_ID}")
     private Long AD1_CATEGORY_ID;
     @Value("${AD1_WIDTH}")

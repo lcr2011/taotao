@@ -13,7 +13,8 @@
                            http://code.alibabatech.com/schema/dubbo
                            http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-
+    <!-- 加载属性文件 -->
+    <context:property-placeholder location="classpath:resource/resource.properties"/>
     <!-- 配置注解驱动 -->
     <mvc:annotation-driven/>
     <!-- 视图解析器 -->
@@ -37,10 +38,10 @@
     </bean>
     <!-- 引用dubbo服务 -->
     <dubbo:application name="taotao-manager-web"/>
-    <!--<dubbo:registry protocol="zookeeper" address="192.168.200.129:2181"/>-->
+    <!--<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181"/>-->
     <dubbo:registry protocol="zookeeper" address="www.eshaon.xin:2181"/>
-    <dubbo:reference interface="com.taotao.service.ItemService" id="itemService" />
-    <dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService" />
-    <dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService" />
-    <dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService" />
+    <dubbo:reference interface="com.taotao.service.ItemService" id="itemService"/>
+    <dubbo:reference interface="com.taotao.service.ItemCatService" id="itemCatService"/>
+    <dubbo:reference interface="com.taotao.content.service.ContentCategoryService" id="contentCategoryService"/>
+    <dubbo:reference interface="com.taotao.content.service.ContentService" id="contentService"/>
 </beans>

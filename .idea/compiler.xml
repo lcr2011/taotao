@@ -16,10 +16,14 @@
         <module name="taotao-manager-service" />
         <module name="taotao-manager-web" />
         <module name="taotao-portal-web" />
+        <module name="taotao-search-interface" />
+        <module name="taotao-search-service" />
+        <module name="taotao-search-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="com-portal-web" target="1.7" />
+      <module name="fastdfs_client" target="1.5" />
       <module name="taotao-common" target="1.7" />
       <module name="taotao-content" target="1.7" />
       <module name="taotao-content-interface" target="1.7" />
@@ -32,6 +36,10 @@
       <module name="taotao-manager-web" target="1.7" />
       <module name="taotao-parent" target="1.7" />
       <module name="taotao-portal-web" target="1.7" />
+      <module name="taotao-search" target="1.7" />
+      <module name="taotao-search-interface" target="1.7" />
+      <module name="taotao-search-service" target="1.7" />
+      <module name="taotao-search-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -54,3 +54,27 @@ Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@72
 
 [INFO ] 2017-10-21 21:20:47,768 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
 Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-23 21:42:19,924 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4b7524e: startup date [Mon Oct 23 21:42:19 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-23 21:42:20,145 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-23 23:26:28,562 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d8409fb: startup date [Mon Oct 23 23:26:28 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-23 23:26:28,700 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
+
+
+[INFO ] 2017-10-23 23:29:31,074 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@72871d3e: startup date [Mon Oct 23 23:29:31 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-23 23:29:31,151 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-redis.xml]
