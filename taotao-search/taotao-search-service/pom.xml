@@ -73,6 +73,8 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
+        <!-- Redis客户端 -->
+        <!-- solr本身可以提供缓存，所以这里不需要redis依赖jar包 -->
         <!-- 添加solrJ的依赖 -->
         <dependency>
             <groupId>org.apache.solr</groupId>

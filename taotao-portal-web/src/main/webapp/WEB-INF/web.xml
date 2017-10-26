@@ -33,7 +33,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>taotao-portal-web</servlet-name>
-        <!-- 伪静态化-->
+        <!-- 伪静态化 拦截以.html结尾的页面 和搜索引擎有关-->
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 

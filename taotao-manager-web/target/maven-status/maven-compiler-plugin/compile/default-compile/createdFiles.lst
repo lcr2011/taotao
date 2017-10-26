@@ -1,4 +1,5 @@
 com\taotao\controller\PageController.class
+com\taotao\controller\IndexManagerController.class
 com\taotao\controller\ItemController.class
 com\taotao\controller\ContentCategoryController.class
 com\taotao\controller\PictureController.class

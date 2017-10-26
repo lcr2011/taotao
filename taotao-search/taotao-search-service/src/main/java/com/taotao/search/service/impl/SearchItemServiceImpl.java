@@ -14,11 +14,6 @@ import com.taotao.search.service.SearchItemService;
 
 /**
  * 商品数据导入索引库
- * <p>Title: SearchItemServiceImpl</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.cn</p>
- *
- * @version 1.0
  */
 @Service
 public class SearchItemServiceImpl implements SearchItemService {
