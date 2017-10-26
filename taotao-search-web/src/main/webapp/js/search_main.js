@@ -1223,14 +1223,14 @@ SEARCH.top_page_html = function(d, e, g, b) {
     }
     var c = '<span class="text"><i>' + d + "</i>/" + e + "</span>";
     if (d <= 1) {
-        c += '<span class="prev-disabled">上一页<b></b></span>'
+        c += '<span class="prev-disabled">上一dd页<b></b></span>'
     } else {
-        c += '<a onclick="SEARCH.page(' + a + ')" href="javascript:;" class="prev" title="使用方向键左键也可翻到上一页哦！">上一页<b></b></a>'
+        c += '<a onclick="SEARCH.page(' + a + ')" href="javascript:;" class="prev" title="使用方向键左键也可翻到上一页哦dd！">上一页<b></b></a>'
     }
     if (d >= e) {
-        c += '<span class="next-disabled">下一页<b></b></span>'
+        c += '<span class="next-disabled">下一dd页<b></b></span>'
     } else {
-        c += '<a onclick="SEARCH.page(' + f + ')" href="javascript:;" class="next" title="使用方向键右键也可翻到下一页哦！">下一页<b></b></a>'
+        c += '<a onclick="SEARCH.page(' + f + ')" href="javascript:;" class="next" title="使用方向键右键也可翻到下一页哦！dd">下一页<b></b></a>'
     }
     $("#top_pagi").html(c);
     $("#res_count").html(g)
@@ -1254,9 +1254,9 @@ SEARCH.bottom_page_html = function(e, k, j) {
         a = b - 4
     }
     if (e <= 1) {
-        f += '<span class="prev-disabled">上一页<b></b></span>'
+        f += '<span class="prev-disabled">上一页dd<b></b></span>'
     } else {
-        f += '<a onclick="SEARCH.page(' + d + ', true)" href="javascript:;" class="prev" title="使用方向键左键也可翻到上一页哦！">上一页<b></b></a>'
+        f += '<a onclick="SEARCH.page(' + d + ', true)" href="javascript:;" class="prev" title="使用方向键左键也可翻到上一页哦！dd">上一页<b></b></a>'
     }
     for (var h = 1; h <= k; h++) {
         if (h <= 2 || h >= a && h <= b) {
@@ -1274,11 +1274,11 @@ SEARCH.bottom_page_html = function(e, k, j) {
         }
     }
     if (e >= k) {
-        f += '<span class="next-disabled">下一页<b></b></span>'
+        f += '<span class="next-disabled">下一页dd<b></b></span>'
     } else {
-        f += '<a onclick="SEARCH.page(' + g + ', true)" href="javascript:;" class="next" title="使用方向键右键也可翻到下一页哦！">下一页<b></b></a>'
+        f += '<a onclick="SEARCH.page(' + g + ', true)" href="javascript:;" class="next" title="使用方向键右键也可翻到下一页哦！dd">下一页dd<b></b></a>'
     }
-    f += '<span class="page-skip"><em>&nbsp;&nbsp;共' + k + '页&nbsp;&nbsp;&nbsp;&nbsp;到第</em><input class="jumpto" type="text" value="' + e + '" onkeydown="javascript:if(event.keyCode==13){SEARCH.page_jump(' + k + "," + j + ');return false;}"/><em>页</em><a class="btn-skipsearch" value="确定" onclick="SEARCH.page_jump(' + k + "," + j + ')" href="javascript:;">确定</a></span>';
+    f += '<span class="page-skip"><em>&nbsp;&nbsp;共' + k + '页&nbsp;&nbsp;&nbsp;&nbsp;到dd第</em><input class="jumpto" type="text" value="' + e + '" onkeydown="javascript:if(event.keyCode==13){SEARCH.page_jump(' + k + "," + j + ');return false;}"/><em>页</em><a class="btn-skipsearch" value="确定" onclick="SEARCH.page_jump(' + k + "," + j + ')" href="javascript:;">确定</a></span>';
     $("#pagin-btm").html(f)
 };
 SEARCH.page = function(b, a) {
@@ -1286,7 +1286,7 @@ SEARCH.page = function(b, a) {
     if (b < 1) {
         b = 1
     }
-    window.location = "http://localhost:8082/search.html?q="+SEARCH.query+"&page="+b;
+    window.location = "http://localhost:8085/search.html?q="+SEARCH.query+"&page="+b;
 //    if (a) {
 //        window.scrollTo(0, $("#filter").offset().top)
 //    }
