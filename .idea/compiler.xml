@@ -10,6 +10,7 @@
         <module name="taotao-common" />
         <module name="taotao-content-interface" />
         <module name="taotao-content-service" />
+        <module name="taotao-item-web" />
         <module name="taotao-manager-dao" />
         <module name="taotao-manager-interface" />
         <module name="taotao-manager-pojo" />
@@ -19,6 +20,9 @@
         <module name="taotao-search-interface" />
         <module name="taotao-search-service" />
         <module name="taotao-search-web" />
+        <module name="taotao-sso-interface" />
+        <module name="taotao-sso-service" />
+        <module name="taotao-sso-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +32,7 @@
       <module name="taotao-content" target="1.7" />
       <module name="taotao-content-interface" target="1.7" />
       <module name="taotao-content-service" target="1.7" />
+      <module name="taotao-item-web" target="1.7" />
       <module name="taotao-manager" target="1.7" />
       <module name="taotao-manager-dao" target="1.7" />
       <module name="taotao-manager-interface" target="1.7" />
@@ -40,6 +45,10 @@
       <module name="taotao-search-interface" target="1.7" />
       <module name="taotao-search-service" target="1.7" />
       <module name="taotao-search-web" target="1.7" />
+      <module name="taotao-sso" target="1.7" />
+      <module name="taotao-sso-interface" target="1.7" />
+      <module name="taotao-sso-service" target="1.7" />
+      <module name="taotao-sso-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

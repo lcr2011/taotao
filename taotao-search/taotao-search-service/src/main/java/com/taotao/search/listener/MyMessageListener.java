@@ -7,10 +7,6 @@ import javax.xml.soap.Text;
 
 /**
  * 接收Activemq发送的消息
- * <p>Title: MyMessageListener</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.cn</p> 
- * @version 1.0
  */
 public class MyMessageListener implements MessageListener {
 
@@ -25,5 +21,4 @@ public class MyMessageListener implements MessageListener {
 			e.printStackTrace();
 		}
 	}
-
 }

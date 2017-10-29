@@ -362,3 +362,27 @@ Loading properties file from class path resource [properties/db.properties]
 
 [INFO ] 2017-10-25 21:14:04,010 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:655)
 {dataSource-1} inited
+
+
+[INFO ] 2017-10-26 16:01:19,211 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@23d4616f: startup date [Thu Oct 26 16:01:19 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-26 16:01:20,563 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activemq.xml]
+
+
+[INFO ] 2017-10-26 16:01:30,689 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:Eshaon-PC-50960-1509004890306-1:1,clientId=null,started=false}
+
+
+[INFO ] 2017-10-26 16:25:27,941 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@26c455ab: startup date [Thu Oct 26 16:25:27 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-26 16:25:28,070 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activemq.xml]
+
+
+[INFO ] 2017-10-26 16:25:29,784 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:Eshaon-PC-51520-1509006329545-1:1,clientId=null,started=false}

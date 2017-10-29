@@ -14,7 +14,7 @@
 		<constructor-arg name="host" value="www.eshaon.xin"/>
 		<constructor-arg name="port" value="6379"/>
 	</bean>
-	<bean id="jedisClientPool" class="com.taotao.com.taotao.jedis.JedisClientPool"/>
+	<bean id="jedisClientPool" class="com.taotao.jedis.JedisClientPool"/>
 	<!-- redis集群 -->
 	<!-- <bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
 		<constructor-arg>

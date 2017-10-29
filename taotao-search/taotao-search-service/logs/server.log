@@ -1,0 +1,28 @@
+
+
+[INFO ] 2017-10-26 16:22:51,021 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@507792fe: startup date [Thu Oct 26 16:22:50 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-26 16:22:52,485 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activemq.xml]
+
+
+[WARN ] 2017-10-26 16:23:04,172 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.jms.listener.DefaultMessageListenerContainer#1' defined in class path resource [spring/applicationContext-activemq.xml]: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Property 'destination' or 'destinationName' is required
+
+
+[INFO ] 2017-10-26 16:24:05,734 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a538af7: startup date [Thu Oct 26 16:24:05 CST 2017]; root of context hierarchy
+
+
+[INFO ] 2017-10-26 16:24:05,845 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-activemq.xml]
+
+
+[INFO ] 2017-10-26 16:24:06,662 method:org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:341)
+Starting beans in phase 2147483647
+
+
+[INFO ] 2017-10-26 16:24:07,525 method:org.springframework.jms.connection.SingleConnectionFactory.initConnection(SingleConnectionFactory.java:311)
+Established shared JMS Connection: ActiveMQConnection {id=ID:Eshaon-PC-51487-1509006247263-1:1,clientId=null,started=false}

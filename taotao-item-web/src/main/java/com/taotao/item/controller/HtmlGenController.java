@@ -17,30 +17,25 @@ import freemarker.template.Template;
 
 /**
  * 网页静态处理Controller
- * <p>Title: HtmlGenController</p>
- * <p>Description: </p>
- * <p>Company: www.itcast.cn</p> 
- * @version 1.0
  */
 @Controller
 public class HtmlGenController {
 
-	@Autowired
-	private FreeMarkerConfigurer freeMarkerConfigurer;
-	
-	@RequestMapping("/genhtml")
-	@ResponseBody
-	public String genHtml() throws Exception {
-		//生成静态页面
-		Configuration configuration = freeMarkerConfigurer.getConfiguration();
-		Template template = configuration.getTemplate("hello.ftl");
-		Map data = new HashMap<>();
-		data.put("hello", "spring freemarker test");
-		Writer out = new FileWriter(new File("D:/temp/javaee28/out/test.html"));
-		template.process(data, out);
-		out.close();
-		//返回结果
-		return "OK";
-	}
-	
+    @Autowired
+    private FreeMarkerConfigurer freeMarkerConfigurer;
+
+    @RequestMapping("/genhtml")
+    @ResponseBody
+    public String genHtml() throws Exception {
+        //生成静态页面
+        Configuration configuration = freeMarkerConfigurer.getConfiguration();
+        Template template = configuration.getTemplate("hello.ftl");
+        Map data = new HashMap<>();
+        data.put("hello", "spring freemarker test");
+        Writer out = new FileWriter(new File("E:\\JAVA\\Project\\temp\\out\\test.html"));
+        template.process(data, out);
+        out.close();
+        //返回结果
+        return "OK";
+    }
 }

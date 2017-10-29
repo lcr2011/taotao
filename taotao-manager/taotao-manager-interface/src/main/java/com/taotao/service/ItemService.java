@@ -3,6 +3,7 @@ package com.taotao.service;
 import com.taotao.common.pojo.EasyUIDataGridResult;
 import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.pojo.TbItem;
+import com.taotao.pojo.TbItemDesc;
 
 /**
  * Created by Eshaon on 2017-10-18.
@@ -15,4 +16,5 @@ public interface ItemService {
 
     TaotaoResult addItem(TbItem item, String desc);
 
+    TbItemDesc getItemDescById(long itemId);
 }

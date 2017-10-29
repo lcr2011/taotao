@@ -9,8 +9,31 @@
         <relativePath>../taotao-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>taotao-sso</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>taotao-sso-interface</module>
+        <module>taotao-sso-service</module>
+    </modules>
+    <dependencies>
+        <dependency>
+            <groupId>com.taotao</groupId>
+            <artifactId>taotao-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <configuration>
+                    <path>/</path>
+                    <port>8087</port>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
