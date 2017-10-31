@@ -149,6 +149,5 @@ public class TaotaoResult implements Serializable {
             return null;
         }
     }
-
 }
 

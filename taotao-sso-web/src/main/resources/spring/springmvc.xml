@@ -24,10 +24,14 @@
     </bean>
     <!-- 配置包扫描器，扫描@Controller注解的类 -->
     <context:component-scan base-package="com.taotao.sso.controller"/>
+    <!-- 配置资源映射 -->
+    <mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+    <mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+    <mvc:resources location="/WEB-INF/images/" mapping="/images/**"/>
 
     <!-- 引用dubbo服务 -->
     <dubbo:application name="taotao-sso-web"/>
     <!--<dubbo:registry protocol="zookeeper" address="192.168.25.167:2181"/>-->
     <dubbo:registry protocol="zookeeper" address="www.eshaon.xin:2181"/>
-    <!-- <dubbo:reference interface="com.taotao.service.ItemService" id="itemService" /> -->
+    <dubbo:reference interface="com.taotao.sso.service.UserService" id="userService"/>
 </beans>      

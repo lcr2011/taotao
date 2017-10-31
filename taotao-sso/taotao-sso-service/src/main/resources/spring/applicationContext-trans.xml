@@ -33,7 +33,6 @@
     </tx:advice>
     <!-- 切面 -->
     <aop:config>
-        <aop:advisor advice-ref="txAdvice"
-                     pointcut="execution(* com.taotao.sso.service.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* com.taotao.sso.service.*.*(..))"/>
     </aop:config>
 </beans>
