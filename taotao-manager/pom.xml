@@ -30,16 +30,16 @@
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
-                    <!--<path>/</path>-->
-                    <!--<port>8080</port>-->
-                    <path>/taotao-manager</path>
+                    <path>/</path>
                     <port>8080</port>
-                    <!-- 在 tomcat7 上部署路径为：http://192.168.25.135:8080/manager/text -->
+                    <!--<path>/taotao-manager</path>
+                    <port>8080</port>
+                    &lt;!&ndash; 在 tomcat7 上部署路径为：http://192.168.25.135:8080/manager/text &ndash;&gt;
                     <url>http://192.168.25.135:8080/manager/text</url>
-                    <!-- 在 tomcat6 上部署路径为：http://192.168.25.135:8080/manager/text -->
-                    <!--<url>http://192.168.25.135:8080/manager</url>-->
+                    &lt;!&ndash; 在 tomcat6 上部署路径为：http://192.168.25.135:8080/manager/text &ndash;&gt;
+                    &lt;!&ndash;<url>http://192.168.25.135:8080/manager</url>&ndash;&gt;
                     <username>tomcat</username>
-                    <password>tomcat</password>
+                    <password>tomcat</password>-->
                 </configuration>
             </plugin>
         </plugins>
