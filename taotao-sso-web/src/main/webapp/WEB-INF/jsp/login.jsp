@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page trimDirectiveWhitespaces="true" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -11,21 +11,22 @@
 <body>
 <div class="w">
     <div id="logo">
-    	<a href="http://localhost:8082" clstag="passport|keycount|login|01">
-    		<img src="/images/taotao-logo.gif" alt="淘淘" width="170" height="60"/>
-    	</a><b></b>
-   	</div>
+        <a href="http://localhost:8082" clstag="passport|keycount|login|01">
+            <img src="/images/taotao-logo.gif" alt="淘淘" width="170" height="60"/>
+        </a><b></b>
+    </div>
 </div>
 <form id="formlogin" method="post" onsubmit="return false;">
     <div class=" w1" id="entry">
         <div class="mc " id="bgDiv">
-            <div id="entry-bg" clstag="passport|keycount|login|02" style="width: 511px; height: 455px; position: absolute; left: -44px; top: -44px; background: url(/images/544a11d3Na5a3d566.png) 0px 0px no-repeat;">
-			</div>
+            <div id="entry-bg" clstag="passport|keycount|login|02"
+                 style="width: 511px; height: 455px; position: absolute; left: -44px; top: -44px; background: url(/images/544a11d3Na5a3d566.png) 0px 0px no-repeat;">
+            </div>
             <div class="form ">
                 <div class="item fore1">
                     <span>用户名</span>
                     <div class="item-ifo">
-                        <input type="text" id="loginname" name="username" class="text"  tabindex="1" autocomplete="off"/>
+                        <input type="text" id="loginname" name="username" class="text" tabindex="1" autocomplete="off"/>
                         <div class="i-name ico"></div>
                         <label id="loginname_succeed" class="blank invisible"></label>
                         <label id="loginname_error" class="hide"><b></b></label>
@@ -59,48 +60,47 @@
     </div>
 </form>
 <script type="text/javascript">
-	var redirectUrl = "${redirect}";
-	var LOGIN = {
-			checkInput:function() {
-				if ($("#loginname").val() == "") {
-					alert("用户名不能为空");
-					$("#loginname").focus();
-					return false;
-				}
-				if ($("#nloginpwd").val() == "") {
-					alert("密码不能为空");
-					$("#nloginpwd").focus();
-					return false;
-				}
-				return true;
-			},
-			doLogin:function() {
-				$.post("/user/login", $("#formlogin").serialize(),function(data){
-					if (data.status == 200) {
-						alert("登录成功！");
-						if (redirectUrl == "") {
-							location.href = "http://localhost:8082";
-						} else {
-							location.href = redirectUrl;
-						}
-					} else {
-						alert("登录失败，原因是：" + data.msg);
-						$("#loginname").select();
-					}
-				});
-			},
-			login:function() {
-				if (this.checkInput()) {
-					this.doLogin();
-				}
-			}
-		
-	};
-	$(function(){
-		$("#loginsubmit").click(function(){
-			LOGIN.login();
-		});
-	});
+    var redirectUrl = "${redirect}"; //${redirect}的指由PageController控制器的showLogin方法传递过来(redirectUrl=${redirect}=http://localhost:8091/order/order-cart.html)
+    var LOGIN = {
+        checkInput: function () {
+            if ($("#loginname").val() == "") {
+                alert("用户名不能为空");
+                $("#loginname").focus();
+                return false;
+            }
+            if ($("#nloginpwd").val() == "") {
+                alert("密码不能为空");
+                $("#nloginpwd").focus();
+                return false;
+            }
+            return true;
+        },
+        doLogin: function () {
+            $.post("/user/login", $("#formlogin").serialize(), function (data) {
+                if (data.status == 200) {
+                    alert("登录成功！");
+                    if (redirectUrl == "") {
+                        location.href = "http://localhost:8082";
+                    } else {
+                        location.href = redirectUrl; //跳转到http://localhost:8091/order/order-cart.html
+                    }
+                } else {
+                    alert("登录失败，原因是：" + data.msg);
+                    $("#loginname").select();
+                }
+            });
+        },
+        login: function () {
+            if (this.checkInput()) {
+                this.doLogin();
+            }
+        }
+    };
+    $(function () {
+        $("#loginsubmit").click(function () {
+            LOGIN.login();
+        });
+    });
 </script>
 </body>
 </html>

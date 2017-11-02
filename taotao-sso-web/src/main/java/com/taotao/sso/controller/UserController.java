@@ -57,6 +57,10 @@ public class UserController {
             //把token写入cookie
             CookieUtils.setCookie(request, response, TOKEN_KEY, result.getData().toString());
         }
+        System.out.println("用户名:" + username + ";" + "密码:" + password);
+        System.out.println(result.getData());
+        System.out.println(result.getStatus());
+        System.out.println(result.getMsg());
         return result;
     }
 

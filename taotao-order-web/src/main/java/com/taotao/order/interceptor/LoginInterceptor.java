@@ -53,7 +53,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             //拦截
             return false;
         }
-        //5.如果取到用户信息,放行
+        //5.如果取到用户信息。放行。
         // 把用户信息放到request中
         TbUser user = (TbUser) taotaoResult.getData();
         request.setAttribute("user", user);
@@ -62,14 +62,14 @@ public class LoginInterceptor implements HandlerInterceptor {
     }
 
     @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response,
-                           Object handler, ModelAndView modelAndView) throws Exception {
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
+                           ModelAndView modelAndView) throws Exception {
         //handler执行之后，modelAndView返回之前
     }
 
     @Override
-    public void afterCompletion(HttpServletRequest request, HttpServletResponse response,
-                                Object handler, Exception ex) throws Exception {
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
+            throws Exception {
         // 在ModelAndView返回之后，异常处理
     }
 }

@@ -5,9 +5,6 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.taotao.common.pojo.TaotaoResult;
-import com.taotao.order.pojo.OrderInfo;
-import com.taotao.order.service.OrderService;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +12,15 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.taotao.common.pojo.TaotaoResult;
 import com.taotao.common.utils.CookieUtils;
 import com.taotao.common.utils.JsonUtils;
+import com.taotao.order.pojo.OrderInfo;
+import com.taotao.order.service.OrderService;
 import com.taotao.pojo.TbItem;
 import com.taotao.pojo.TbUser;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * 订单确认页面处理Controller
@@ -30,7 +30,6 @@ public class OrderCartController {
 
     @Value("${CART_KEY}")
     private String CART_KEY;
-
     @Autowired
     private OrderService orderService;
 
@@ -42,6 +41,7 @@ public class OrderCartController {
         //用户必须是登录状态
         //取用户id
         TbUser user = (TbUser) request.getAttribute("user");
+        System.out.println(user.getPassword());
         System.out.println(user.getUsername());
         //根据用户信息取收货地址列表，使用静态数据。
         //把收货地址列表取出传递给页面

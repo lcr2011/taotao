@@ -144,7 +144,7 @@ public class UserServiceImpl implements UserService {
         jedisClient.expire(USER_SESSION + ":" + token, SESSION_EXPIRE);
         //把json转换成User对象
         TbUser user = JsonUtils.jsonToPojo(json, TbUser.class);
-//        return TaotaoResult.ok(user);
-        return TaotaoResult.ok(json);
+        return TaotaoResult.ok(user);
+//        return TaotaoResult.ok(json);
     }
 }

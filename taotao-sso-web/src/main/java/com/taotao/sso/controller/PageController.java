@@ -15,7 +15,7 @@ public class PageController {
         return "register";
     }
 
-    @RequestMapping({"/page/login"})
+    @RequestMapping({"/page/login"})//SSO_URL + "/page/login?url=" + requestURL
     public String showLogin(String url, Model model) {
         model.addAttribute("redirect", url);
         return "login";
